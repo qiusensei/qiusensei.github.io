@@ -20,22 +20,22 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="这是我的第一篇博客从昨晚算起,我大概弄了有八个小时才勉强搭建起这样一个简陋的网站,而且还有很多想做却没能完成的事情.  设置博客头像 侧边栏的设置 添加社交连接 添加评论功能(这里使用了有序列表)  但至少我也算是完成了自己的第一个网站,并书写着自己的第一篇博客,也算有一点点的成就感.既然是第一篇博客,就把它当成一个类似序一样的东西来写,定一些目标和展望.  网志（英语：Blog）是一种线上日记型">
+  <meta name="description" content="Chap.3 音频 音频参数音频码率48k,128k,320k,512k都是在说码率,音频码率关乎音频质量,码率越大音频质量越好.在同码率下不同的音频编码也会有不同的音质. 音频参数 采样精度:即量化位数(digitalizing bit),有8位,16位,24位,32位(浮点)三种,位数越多声音就越准确. 既有16bit又有24bit就是32bit(浮点),它不是真32bit,只是给了更多的动态">
 <meta property="og:type" content="article">
-<meta property="og:title" content="First Blog">
-<meta property="og:url" content="http://example.com/2023/07/16/First-Blog/index.html">
+<meta property="og:title" content="音频基础">
+<meta property="og:url" content="http://example.com/2023/08/15/%E9%9F%B3%E9%A2%91%E5%9F%BA%E7%A1%80/index.html">
 <meta property="og:site_name" content="Qiusensei">
-<meta property="og:description" content="这是我的第一篇博客从昨晚算起,我大概弄了有八个小时才勉强搭建起这样一个简陋的网站,而且还有很多想做却没能完成的事情.  设置博客头像 侧边栏的设置 添加社交连接 添加评论功能(这里使用了有序列表)  但至少我也算是完成了自己的第一个网站,并书写着自己的第一篇博客,也算有一点点的成就感.既然是第一篇博客,就把它当成一个类似序一样的东西来写,定一些目标和展望.  网志（英语：Blog）是一种线上日记型">
+<meta property="og:description" content="Chap.3 音频 音频参数音频码率48k,128k,320k,512k都是在说码率,音频码率关乎音频质量,码率越大音频质量越好.在同码率下不同的音频编码也会有不同的音质. 音频参数 采样精度:即量化位数(digitalizing bit),有8位,16位,24位,32位(浮点)三种,位数越多声音就越准确. 既有16bit又有24bit就是32bit(浮点),它不是真32bit,只是给了更多的动态">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2023-07-16T10:24:17.000Z">
-<meta property="article:modified_time" content="2023-07-18T13:26:43.186Z">
+<meta property="article:published_time" content="2023-08-15T10:12:57.000Z">
+<meta property="article:modified_time" content="2023-08-15T10:14:44.944Z">
 <meta property="article:author" content="qiusensei">
-<meta property="article:tag" content="生活">
-<meta property="article:tag" content="日记">
-<meta property="article:tag" content="目标">
+<meta property="article:tag" content="MAD">
+<meta property="article:tag" content="剪辑">
+<meta property="article:tag" content="音频">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://example.com/2023/07/16/First-Blog/">
+<link rel="canonical" href="http://example.com/2023/08/15/%E9%9F%B3%E9%A2%91%E5%9F%BA%E7%A1%80/">
 
 
 <script id="page-configurations">
@@ -48,7 +48,7 @@
   };
 </script>
 
-  <title>First Blog | Qiusensei</title>
+  <title>音频基础 | Qiusensei</title>
   
 
 
@@ -168,7 +168,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2023/07/16/First-Blog/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2023/08/15/%E9%9F%B3%E9%A2%91%E5%9F%BA%E7%A1%80/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -181,7 +181,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          First Blog
+          音频基础
         </h1>
 
         <div class="post-meta">
@@ -190,23 +190,17 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
+              
 
-              <time title="创建时间：2023-07-16 18:24:17" itemprop="dateCreated datePublished" datetime="2023-07-16T18:24:17+08:00">2023-07-16</time>
+              <time title="创建时间：2023-08-15 18:12:57 / 修改时间：18:14:44" itemprop="dateCreated datePublished" datetime="2023-08-15T18:12:57+08:00">2023-08-15</time>
             </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2023-07-18 21:26:43" itemprop="dateModified" datetime="2023-07-18T21:26:43+08:00">2023-07-18</time>
-              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E4%BA%BA%E7%94%9F/" itemprop="url" rel="index"><span itemprop="name">人生</span></a>
+                  <a href="/categories/%E5%AA%92%E4%BD%93/" itemprop="url" rel="index"><span itemprop="name">媒体</span></a>
                 </span>
             </span>
 
@@ -223,7 +217,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>1k</span>
+              <span>1.2k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
@@ -242,36 +236,47 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h1 id="这是我的第一篇博客"><a href="#这是我的第一篇博客" class="headerlink" title="这是我的第一篇博客"></a>这是我的第一篇博客</h1><p>从昨晚算起,我大概弄了有八个小时才勉强搭建起这样一个简陋的网站,而且还有很多想做却没能完成的事情.</p>
-<ol>
-<li>设置博客头像</li>
-<li>侧边栏的设置</li>
-<li>添加社交连接</li>
-<li>添加评论功能<br>(这里使用了有序列表)</li>
-</ol>
-<p>但至少我也算是完成了自己的第一个网站,并书写着自己的第一篇博客,也算有一点点的成就感.既然是第一篇博客,就把它当成一个类似序一样的东西来写,定一些目标和展望.</p>
-<blockquote>
-<p><strong>网志</strong>（英语：Blog）是一种线上日记型式的<strong>个人网站</strong>，借由张贴文章、图片或影片来记录生活、抒发情感或分享资讯。网志上的文章通常根据张贴时间，以倒序方式由新到旧排列。</p>
+        <h1 id="Chap-3-音频"><a href="#Chap-3-音频" class="headerlink" title="Chap.3 音频"></a>Chap.3 音频</h1><hr>
+<h2 id="音频参数"><a href="#音频参数" class="headerlink" title="音频参数"></a>音频参数</h2><h3 id="音频码率"><a href="#音频码率" class="headerlink" title="音频码率"></a>音频码率</h3><p>48k,128k,320k,512k都是在说码率,音频码率关乎音频质量,码率越大音频质量越好.在同码率下不同的音频编码也会有不同的音质.</p>
+<h3 id="音频参数-1"><a href="#音频参数-1" class="headerlink" title="音频参数"></a>音频参数</h3><ul>
+<li>采样精度:即量化位数(digitalizing bit),有8位,16位,24位,32位(浮点)三种,位数越多声音就越准确.<blockquote>
+<p>既有16bit又有24bit就是32bit(浮点),它不是真32bit,只是给了更多的动态范围,所以叫浮点(float).</p>
 </blockquote>
-<p>现在是七月中旬,我的暑假还有一个多月的时间,大一的暑假生活还算闲适,每周的话,希望自己能写1-2篇的长篇博客,写3篇左右的短篇博客.并在前两周的博客书写中熟练自己markdown语法的使用,内容方面的话可能会比较宽泛.如果用我放假之前的想法,首先完成以下几个方面的博客.</p>
-<ul>
-<li>运动,减肥,健身,营养</li>
-<li>mad剪辑制作过程</li>
-<li>高等代数学习</li>
-<li>matlab学习<br>(这里使用了无序列表)</li>
-<li>chatgpt学习</li>
+</li>
+<li>采样频率:sampling frequency,简写为Fs,最常用的有44.1KHz和48KHz两种.</li>
 </ul>
-<p>当自己完成了这些博客的书写之后,找时间将自己的博客网站主题进行优化,完成自己之前未完成的事情.</p>
-<p>我一直是一个有着低级趣味,胸无大志,做什么事情都三分钟热度的人.高中时候想写日记,最长也就坚持了一个多学期,如今想写博客,又能坚持多久呢.我写博客的初衷,与当初写日记如出一辙.</p>
+<h3 id="有损压缩"><a href="#有损压缩" class="headerlink" title="有损压缩"></a>有损压缩</h3><p>常见格式有wma,mp3,ogg等.</p>
+<h3 id="无损压缩"><a href="#无损压缩" class="headerlink" title="无损压缩"></a>无损压缩</h3><p>常见格式有wav,ape,flac</p>
+<p><strong>wav</strong>是wave文件,微软开发的,44.1KHz采样频率,量化位数16bit.</p>
 <blockquote>
-<h4 id="如出一辙"><a href="#如出一辙" class="headerlink" title="如出一辙"></a>如出一辙</h4><p>像从同一条车辙里走过来一样。形容彼此十分相似（多含贬义）。</p>
+<p>一般来说,WAV格式&#x3D;无损.(公认为无损,音质非常接近CD）.</p>
 </blockquote>
-<p>只不过在我上了大学后,我接触了更多的知识领域和学习方法,我越来越意识到充实自己和提升自己素养的重要性,而提升自己最基础的方法就是不断积累,沉淀与思考.</p>
-<p>引用我高中日记里的话来结束我第一篇博客吧,也算是水水字数.</p>
+<p>wav支持多种编码,其中PCM编码的wav文件,就是无损.在软件输出的时候,就注意要选Windows PCM编码的wav.</p>
+<p>wav文件体积太大了,所以一般用无损压缩的格式:ape或flac,且理论上他俩都能还原为wav.</p>
+<p>ape可以压缩一半,flac压缩的较少,所以flac格式的文件一般较大,但使用时一般用flac,因为ape在转回为flac时容易出问题.</p>
+<h3 id="声道"><a href="#声道" class="headerlink" title="声道"></a>声道</h3><p>声道即声音的通道,声音只有一个通道来传播的叫单声道,英文名为mono.</p>
+<p>2ch&#x3D;two-channel&#x3D;双声道,双声道可以做到立体声stereo.</p>
 <blockquote>
-<p>进入高中有一年加两个多月了,如今的生活是两点睡六点起,几乎无时无刻不在面对着纸和笔,我有时会怀疑自己是否是精神错乱了,会分不清白天和黑夜,对星期与日期的概念已经完全模糊了,而这种情况通常只有放长假时才会发生,可我现在却毫无放假时的闲适感.此时此刻,我的脊椎仍有些酸痛,眼睛也是如此.我的头脑中似乎一直有什么东西在吵闹着,我现在已经很难再找到以往完全沉浸于莫一件事的专注感了.我想写一些东西也是因为这个吧,<strong>我希望做一件事让我陷入思考和专注</strong>,忘我地思考,去赶走在我脑中沸腾喧闹的杂音.(写于2020年11月6日凌晨0点05分)</p>
+<p>双声道一般有两种,一种是杜比的杜比数字(Digital Dolby),简称DD,另一种是数字影院系统(Digital Theater Systems),简称DTS.</p>
 </blockquote>
-<p>真的很希望自己能够一直写下去,虽然对目前的我来说难度很大,但我想,做一些改变,哪怕是一点点,也许就能够向这个世界证明些什么吧?</p>
+<h3 id="音箱"><a href="#音箱" class="headerlink" title="音箱"></a>音箱</h3><ul>
+<li>2.0音箱,只有两个主音箱放所有声音.</li>
+<li>2.1音箱,其中的0.1是超重低音音箱,俗称低音炮subwoofer.</li>
+<li>4.0和4.1多加了一个前置音箱和后置音箱,可以听出来前后左右的声源. </li>
+<li>5.1,有左前置音箱(L),右前置音箱(R),左环绕音箱(L)S,右环绕音箱(RS),中置音箱(C).<blockquote>
+<p>中置音箱将人声分离,可单独调节大小,使人声更清晰.</p>
+</blockquote>
+</li>
+<li>7.1是为了应对宽银幕的需要,在5.1的环绕音箱中间加了两个后环绕音箱.</li>
+</ul>
+<h2 id="OST"><a href="#OST" class="headerlink" title="OST"></a>OST</h2><p>OST就是Original Sound Track,原声大碟.</p>
+<p>EAC&#x3D;exact audio copy,用于抓取CD音轨.抓取完后右cue+wav+log三种文件.</p>
+<ul>
+<li>log文件,即日志,记录一些OST相关信息.</li>
+<li>sector clear:以自己为中心周围没人,即区域安全,常见于CS中.</li>
+<li>cue文件,原全称是cue sheet,是电视台用的节目次序表,这个文件一般是目录或索引一类.</li>
+</ul>
+<h2 id="AAC"><a href="#AAC" class="headerlink" title="AAC"></a>AAC</h2><p>AAC&#x3D;Advanced Audio Codec,即高级音频编码,简单地说,它96k的码率比128k码率的MP3还要好.</p>
 
     </div>
 
@@ -287,7 +292,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="http://example.com/2023/07/16/First-Blog/" title="First Blog">http://example.com/2023/07/16/First-Blog/</a>
+    <a href="http://example.com/2023/08/15/%E9%9F%B3%E9%A2%91%E5%9F%BA%E7%A1%80/" title="音频基础">http://example.com/2023/08/15/音频基础/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
@@ -298,9 +303,9 @@
 
       <footer class="post-footer">
           <div class="post-tags">
-              <a href="/tags/%E7%94%9F%E6%B4%BB/" rel="tag"># 生活</a>
-              <a href="/tags/%E6%97%A5%E8%AE%B0/" rel="tag"># 日记</a>
-              <a href="/tags/%E7%9B%AE%E6%A0%87/" rel="tag"># 目标</a>
+              <a href="/tags/MAD/" rel="tag"># MAD</a>
+              <a href="/tags/%E5%89%AA%E8%BE%91/" rel="tag"># 剪辑</a>
+              <a href="/tags/%E9%9F%B3%E9%A2%91/" rel="tag"># 音频</a>
           </div>
 
         
@@ -309,12 +314,12 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2023/07/16/hello-world/" rel="prev" title="Hello World">
-      <i class="fa fa-chevron-left"></i> Hello World
+    <a href="/2023/07/18/%E5%87%8F%E8%82%A5%E7%9A%84%E5%9F%BA%E6%9C%AC%E5%8E%9F%E7%90%86/" rel="prev" title="减肥的基本原理">
+      <i class="fa fa-chevron-left"></i> 减肥的基本原理
     </a></div>
       <div class="post-nav-item">
-    <a href="/2023/07/17/%E7%89%87%E6%BA%90%E4%B8%8E%E8%A7%86%E9%A2%91%E7%9B%B8%E5%85%B3%E7%9F%A5%E8%AF%86/" rel="next" title="片源与视频相关知识">
-      片源与视频相关知识 <i class="fa fa-chevron-right"></i>
+    <a href="/2023/08/15/%E6%A0%BC%E5%BC%8F%E3%80%81%E5%AD%97%E5%B9%95%E5%92%8C%E6%9D%82%E9%A1%B9/" rel="next" title="格式、字幕和杂项">
+      格式、字幕和杂项 <i class="fa fa-chevron-right"></i>
     </a></div>
     </div>
       </footer>
@@ -374,7 +379,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%BF%99%E6%98%AF%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2"><span class="nav-number">1.</span> <span class="nav-text">这是我的第一篇博客</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%A6%82%E5%87%BA%E4%B8%80%E8%BE%99"><span class="nav-number">1.0.0.1.</span> <span class="nav-text">如出一辙</span></a></li></ol></li></ol></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Chap-3-%E9%9F%B3%E9%A2%91"><span class="nav-number">1.</span> <span class="nav-text">Chap.3 音频</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%9F%B3%E9%A2%91%E5%8F%82%E6%95%B0"><span class="nav-number">1.1.</span> <span class="nav-text">音频参数</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%9F%B3%E9%A2%91%E7%A0%81%E7%8E%87"><span class="nav-number">1.1.1.</span> <span class="nav-text">音频码率</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%9F%B3%E9%A2%91%E5%8F%82%E6%95%B0-1"><span class="nav-number">1.1.2.</span> <span class="nav-text">音频参数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9C%89%E6%8D%9F%E5%8E%8B%E7%BC%A9"><span class="nav-number">1.1.3.</span> <span class="nav-text">有损压缩</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%97%A0%E6%8D%9F%E5%8E%8B%E7%BC%A9"><span class="nav-number">1.1.4.</span> <span class="nav-text">无损压缩</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%A3%B0%E9%81%93"><span class="nav-number">1.1.5.</span> <span class="nav-text">声道</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%9F%B3%E7%AE%B1"><span class="nav-number">1.1.6.</span> <span class="nav-text">音箱</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#OST"><span class="nav-number">1.2.</span> <span class="nav-text">OST</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#AAC"><span class="nav-number">1.3.</span> <span class="nav-text">AAC</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
