@@ -20,22 +20,31 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="Chap.4 格式 AVIAVI:Audio Video Interleave,微软于1992年推出的格式 RMVB在低码率下的表现不错,比RM多一个VB即Vibrate Birate即动态码率. WMVWMV:Windows Media Video,微软开发的格式,一般用VC-1的编码,体积下,同码率下步入RMVB. MP4MP4:Moving Picture Experts Group 4,即">
+  <meta name="description" content="Matlab学习笔记（一）（2023-08-31）教學內容: 環境介面簡介、把MATLAB當計算機使用，與矩陣輸入、操作 演講者: 郭彥甫 (Yan-Fu Kuo), 台大生機系 Vocabularyvariable 变数 trigonometry 熟练使用matlab online help Numeric Variable (Data) Type  Variable的default type是">
 <meta property="og:type" content="article">
-<meta property="og:title" content="格式、字幕和杂项">
-<meta property="og:url" content="http://example.com/2023/08/15/%E6%A0%BC%E5%BC%8F%E3%80%81%E5%AD%97%E5%B9%95%E5%92%8C%E6%9D%82%E9%A1%B9/index.html">
+<meta property="og:title" content="Matlab学习笔记">
+<meta property="og:url" content="http://example.com/2023/08/31/Matlab%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E4%B8%80/index.html">
 <meta property="og:site_name" content="Qiusensei">
-<meta property="og:description" content="Chap.4 格式 AVIAVI:Audio Video Interleave,微软于1992年推出的格式 RMVB在低码率下的表现不错,比RM多一个VB即Vibrate Birate即动态码率. WMVWMV:Windows Media Video,微软开发的格式,一般用VC-1的编码,体积下,同码率下步入RMVB. MP4MP4:Moving Picture Experts Group 4,即">
+<meta property="og:description" content="Matlab学习笔记（一）（2023-08-31）教學內容: 環境介面簡介、把MATLAB當計算機使用，與矩陣輸入、操作 演講者: 郭彥甫 (Yan-Fu Kuo), 台大生機系 Vocabularyvariable 变数 trigonometry 熟练使用matlab online help Numeric Variable (Data) Type  Variable的default type是">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2023-08-15T10:15:32.000Z">
-<meta property="article:modified_time" content="2023-08-15T10:16:08.280Z">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/qiusensei/blogimage@main/image-20230831114256703.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/qiusensei/blogimage@main/image-20230831111459284.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/qiusensei/blogimage@main/image-20230831112704860.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/qiusensei/blogimage@main/image-20230831112106178.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/qiusensei/blogimage@main/image-20230831114433264.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/qiusensei/blogimage@main/image-20230831111808630.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/qiusensei/blogimage@main/image-20230831111922307.png">
+<meta property="article:published_time" content="2023-08-31T03:51:14.000Z">
+<meta property="article:modified_time" content="2023-08-31T03:53:31.600Z">
 <meta property="article:author" content="qiusensei">
-<meta property="article:tag" content="MAD">
-<meta property="article:tag" content="视频">
-<meta property="article:tag" content="剪辑">
+<meta property="article:tag" content="学习">
+<meta property="article:tag" content="数学">
+<meta property="article:tag" content="Matlab">
+<meta property="article:tag" content="编程">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/qiusensei/blogimage@main/image-20230831114256703.png">
 
-<link rel="canonical" href="http://example.com/2023/08/15/%E6%A0%BC%E5%BC%8F%E3%80%81%E5%AD%97%E5%B9%95%E5%92%8C%E6%9D%82%E9%A1%B9/">
+<link rel="canonical" href="http://example.com/2023/08/31/Matlab%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E4%B8%80/">
 
 
 <script id="page-configurations">
@@ -48,7 +57,7 @@
   };
 </script>
 
-  <title>格式、字幕和杂项 | Qiusensei</title>
+  <title>Matlab学习笔记 | Qiusensei</title>
   
 
 
@@ -168,7 +177,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2023/08/15/%E6%A0%BC%E5%BC%8F%E3%80%81%E5%AD%97%E5%B9%95%E5%92%8C%E6%9D%82%E9%A1%B9/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2023/08/31/Matlab%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E4%B8%80/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -181,7 +190,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          格式、字幕和杂项
+          Matlab学习笔记
         </h1>
 
         <div class="post-meta">
@@ -192,7 +201,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2023-08-15 18:15:32 / 修改时间：18:16:08" itemprop="dateCreated datePublished" datetime="2023-08-15T18:15:32+08:00">2023-08-15</time>
+              <time title="创建时间：2023-08-31 11:51:14 / 修改时间：11:53:31" itemprop="dateCreated datePublished" datetime="2023-08-31T11:51:14+08:00">2023-08-31</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -200,7 +209,7 @@
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E5%AA%92%E4%BD%93/" itemprop="url" rel="index"><span itemprop="name">媒体</span></a>
+                  <a href="/categories/%E5%AD%A6%E4%B9%A0/" itemprop="url" rel="index"><span itemprop="name">学习</span></a>
                 </span>
             </span>
 
@@ -217,7 +226,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>1.6k</span>
+              <span>610</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
@@ -236,60 +245,29 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h1 id="Chap-4-格式"><a href="#Chap-4-格式" class="headerlink" title="Chap.4 格式"></a>Chap.4 格式</h1><hr>
-<h2 id="AVI"><a href="#AVI" class="headerlink" title="AVI"></a>AVI</h2><p>AVI:Audio Video Interleave,微软于1992年推出的格式</p>
-<h2 id="RMVB"><a href="#RMVB" class="headerlink" title="RMVB"></a>RMVB</h2><p>在低码率下的表现不错,比RM多一个VB即Vibrate Birate即动态码率.</p>
-<h2 id="WMV"><a href="#WMV" class="headerlink" title="WMV"></a>WMV</h2><p>WMV:Windows Media Video,微软开发的格式,一般用VC-1的编码,体积下,同码率下步入RMVB.</p>
-<h2 id="MP4"><a href="#MP4" class="headerlink" title="MP4"></a>MP4</h2><p>MP4:Moving Picture Experts Group 4,即MPEG-4,H.264是MP4的一种高清编码,运用非常广泛,H.264又称AVC.</p>
-<blockquote>
-<p>H.264的编码有很多方式,有H264,AVC1,x264等,其中H264是商用的,编码算法不公开.</p>
-</blockquote>
-<p>H.265编码:又称HEVC,即High Efficiency Video Coding,中文译为高效视频编码.</p>
-<h2 id="MKV"><a href="#MKV" class="headerlink" title="MKV"></a>MKV</h2><p>MKV是被民间广泛应用的一大格式.其能封装的东西及其广泛.</p>
-<h2 id="MOV"><a href="#MOV" class="headerlink" title="MOV"></a>MOV</h2><p>MOV是苹果公司开发的格式.MOV一大特点是可以带透明通道,易于剪辑.</p>
-<h2 id="FLV"><a href="#FLV" class="headerlink" title="FLV"></a>FLV</h2><p>网络传输用的最广的格式,是Flash Video的简称,随着Flash MX延伸出来的视频格式.FLV也可以使用H.264编码.</p>
-<blockquote>
-<p>F4V:FLV+H.264<br>HLV:FLV+H.263</p>
-</blockquote>
-<h1 id="Chap-5-字幕"><a href="#Chap-5-字幕" class="headerlink" title="Chap.5 字幕"></a>Chap.5 字幕</h1><hr>
-<p>Jap&#x3D;Japanese</p>
-<p>Chn&#x3D;Chinese</p>
-<p>Eng&#x3D;English</p>
-<p>GB是中文拼音的首字母,原意”国标”,换句话说就是简体中文.<br>BIG-5:大五码,也就是繁体中文.</p>
-<blockquote>
-<p>简繁体还有另一种表现形式<br>CHS:简体中文<br>CHT:繁体中文</p>
-</blockquote>
-<h2 id="Closed-Caption"><a href="#Closed-Caption" class="headerlink" title="Closed Caption"></a>Closed Caption</h2><p>closed caption:隐藏字幕,简称CC.</p>
-<p>同时有open caption,一般常见于电影,是没有隐藏的.</p>
-<p>caption和subtitle区别很微妙,前者主要是原文,美国人听得懂英文,那给的英文字幕就是caption,而subtitle一般指翻译字幕.</p>
-<h2 id="subtitle"><a href="#subtitle" class="headerlink" title="subtitle"></a>subtitle</h2><p>字幕:Subtitle,简称sub.</p>
-<p>硬字幕:视频+字幕&#x3D;视频,已经融合进视频了,换句话说就是去不掉的.</p>
-<p>内嵌字幕:视频&#x3D;视频,是在做视频的时候加的字幕,也是无法分离去不掉的.</p>
-<p>软字幕:视频+字幕&#x3D;视频+字幕,软字幕的片源其字幕与视频是分离的,字幕不在视频里面而是挂在了外面,所以也叫外挂字幕.</p>
-<blockquote>
-<p>外挂字幕可以有不止一个字幕,可以多种语言的字幕.<br>找字幕推荐网站:subom和subHD.</p>
-</blockquote>
-<p>软字幕常见ASS,SSA,SRT这三种格式.</p>
-<p>MKV视频格式有一种内挂字幕,也属于软字幕.也就是说MKV可以提取字幕和音频:音频是MKA文件,字幕是MKS文件.具体提取可以使用软件MKVToolenix.</p>
-<p>注:有些资源里除去字幕文件可能还会有字体文件,即Font文件,解压到C盘Windows文件夹的Fonts里就可以了.</p>
-<h1 id="Chap-6-杂项"><a href="#Chap-6-杂项" class="headerlink" title="Chap.6 杂项"></a>Chap.6 杂项</h1><hr>
-<h2 id="OVA"><a href="#OVA" class="headerlink" title="OVA"></a>OVA</h2><p>OVA:Original Video Animation,原创视频动画.</p>
-<h2 id="OVD"><a href="#OVD" class="headerlink" title="OVD"></a>OVD</h2><p>OVD:Original Video DVD,一般捆绑漫画进行发售.</p>
-<h2 id="算法"><a href="#算法" class="headerlink" title="算法"></a>算法</h2><h3 id="CRC32"><a href="#CRC32" class="headerlink" title="CRC32"></a>CRC32</h3><p>CRC32:Cyclic Redundancy Check&#x2F;Code,循环冗余检查&#x2F;码,后面的”32”则表示会产生一个32bit,即一个8位十六进制数的校验值,一般用于检验文件的完整性,检测工具可以使用WinCRC32或是其他小软件.</p>
-<h3 id="MD5"><a href="#MD5" class="headerlink" title="MD5"></a>MD5</h3><p>MD5:Message-Digest Algorithm 5,译为信息摘要算法第五版,也是用来检查文件的完整性的.具有很高的离散性.</p>
-<blockquote>
-<p>散列值:原名Hash,也有译作哈希值&#x2F;哈希算法的.而MD5就是哈希算法中的一种,可以把MD5理解成一辆车的车牌号.</p>
-<p>哈希算法还有好几种算法,其中一种是SHA-1,相较于MD5128位的散列值,SHA-1有160位的散列值,它的破解比MD5还要难.</p>
-</blockquote>
-<h2 id="BT"><a href="#BT" class="headerlink" title="BT"></a>BT</h2><p>BT:bittorrent,bit即码率,比特&#x2F;位,而torrent意为激流,我们一般叫它种子.</p>
-<h2 id="罗马音"><a href="#罗马音" class="headerlink" title="罗马音"></a>罗马音</h2><blockquote>
-<p>世界三大字母体系:</p>
-<ul>
-<li>拉丁字母(罗马字母)</li>
-<li>西里尔字母(斯拉夫字母)</li>
-<li>阿拉伯字母</li>
-</ul>
-</blockquote>
+        <h1 id="Matlab学习笔记（一）（2023-08-31）"><a href="#Matlab学习笔记（一）（2023-08-31）" class="headerlink" title="Matlab学习笔记（一）（2023-08-31）"></a>Matlab学习笔记（一）（2023-08-31）</h1><p>教學內容: 環境介面簡介、把MATLAB當計算機使用，與矩陣輸入、操作</p>
+<p>演講者: 郭彥甫 (Yan-Fu Kuo), 台大生機系</p>
+<h2 id="Vocabulary"><a href="#Vocabulary" class="headerlink" title="Vocabulary"></a>Vocabulary</h2><p>variable 变数</p>
+<p>trigonometry</p>
+<p>熟练使用matlab online help</p>
+<p>Numeric Variable (Data) Type </p>
+<p>Variable的default type是double,default默认的</p>
+<p>semicolon是“；”分号的意思</p>
+<p>colon是“：”冒号的意思</p>
+<p>matlab中分号隔开矩阵的上下两行</p>
+<h2 id="Numeric-Variable-Data-Type"><a href="#Numeric-Variable-Data-Type" class="headerlink" title="Numeric Variable (Data) Type"></a>Numeric Variable (Data) Type</h2><p><img src="https://cdn.jsdelivr.net/gh/qiusensei/blogimage@main/image-20230831114256703.png" alt="image-20230831114256703"></p>
+<h2 id="Special-Variables-and-Constants"><a href="#Special-Variables-and-Constants" class="headerlink" title="Special Variables and Constants"></a>Special Variables and Constants</h2><p> iskeyword</p>
+<p>variables can’t use keyword</p>
+<h2 id="MATLAB-Calling-Priority"><a href="#MATLAB-Calling-Priority" class="headerlink" title="MATLAB Calling Priority"></a>MATLAB Calling Priority</h2><p><img src="https://cdn.jsdelivr.net/gh/qiusensei/blogimage@main/image-20230831111459284.png" alt="image-20230831111459284"></p>
+<h2 id="Array-Indexing"><a href="#Array-Indexing" class="headerlink" title="Array Indexing"></a>Array Indexing</h2><p>pay attention to the difference between “A([1 3;1 3])” and “A([1 3],[1 3])”</p>
+<h3 id="A-1-3-1-3"><a href="#A-1-3-1-3" class="headerlink" title="A([1 3],[1 3])"></a>A([1 3],[1 3])</h3><p>可以按照逗号”,”分隔行与列来记忆,逗号前表示1行与3行,逗号后表示1列与3列</p>
+<h3 id="A-1-3-1-3-1"><a href="#A-1-3-1-3-1" class="headerlink" title="A([1 3;1 3])"></a>A([1 3;1 3])</h3><p>A([1 3])会输出矩阵的1号和三号元素,增加了分号”;”后,就会连续输出两次</p>
+<h2 id="Some-Special-Matrix"><a href="#Some-Special-Matrix" class="headerlink" title="Some Special Matrix"></a>Some Special Matrix</h2><p><img src="https://cdn.jsdelivr.net/gh/qiusensei/blogimage@main/image-20230831112704860.png" alt="image-20230831112704860"></p>
+<h2 id="Some-Matrix-Related-Functions"><a href="#Some-Matrix-Related-Functions" class="headerlink" title="Some Matrix Related Functions"></a>Some Matrix Related Functions</h2><p>一般是针对column vectors的Functions</p>
+<p><img src="https://cdn.jsdelivr.net/gh/qiusensei/blogimage@main/image-20230831112106178.png" alt="image-20230831112106178"></p>
+<h2 id="Exercise"><a href="#Exercise" class="headerlink" title="Exercise"></a>Exercise</h2><p><img src="https://cdn.jsdelivr.net/gh/qiusensei/blogimage@main/image-20230831114433264.png" alt="image-20230831114433264"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/qiusensei/blogimage@main/image-20230831111808630.png" alt="image-20230831111808630"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/qiusensei/blogimage@main/image-20230831111922307.png" alt="image-20230831111922307"></p>
 
     </div>
 
@@ -305,7 +283,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="http://example.com/2023/08/15/%E6%A0%BC%E5%BC%8F%E3%80%81%E5%AD%97%E5%B9%95%E5%92%8C%E6%9D%82%E9%A1%B9/" title="格式、字幕和杂项">http://example.com/2023/08/15/格式、字幕和杂项/</a>
+    <a href="http://example.com/2023/08/31/Matlab%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E4%B8%80/" title="Matlab学习笔记">http://example.com/2023/08/31/Matlab学习笔记-一/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
@@ -316,9 +294,10 @@
 
       <footer class="post-footer">
           <div class="post-tags">
-              <a href="/tags/MAD/" rel="tag"># MAD</a>
-              <a href="/tags/%E8%A7%86%E9%A2%91/" rel="tag"># 视频</a>
-              <a href="/tags/%E5%89%AA%E8%BE%91/" rel="tag"># 剪辑</a>
+              <a href="/tags/%E5%AD%A6%E4%B9%A0/" rel="tag"># 学习</a>
+              <a href="/tags/%E6%95%B0%E5%AD%A6/" rel="tag"># 数学</a>
+              <a href="/tags/Matlab/" rel="tag"># Matlab</a>
+              <a href="/tags/%E7%BC%96%E7%A8%8B/" rel="tag"># 编程</a>
           </div>
 
         
@@ -327,13 +306,10 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2023/08/15/%E9%9F%B3%E9%A2%91%E5%9F%BA%E7%A1%80/" rel="prev" title="音频基础">
-      <i class="fa fa-chevron-left"></i> 音频基础
+    <a href="/2023/08/18/2023%E6%9A%91%E5%81%87%E5%B0%8F%E7%BB%93/" rel="prev" title="2023暑假小结">
+      <i class="fa fa-chevron-left"></i> 2023暑假小结
     </a></div>
-      <div class="post-nav-item">
-    <a href="/2023/08/18/2023%E6%9A%91%E5%81%87%E5%B0%8F%E7%BB%93/" rel="next" title="2023暑假小结">
-      2023暑假小结 <i class="fa fa-chevron-right"></i>
-    </a></div>
+      <div class="post-nav-item"></div>
     </div>
       </footer>
     
@@ -392,7 +368,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Chap-4-%E6%A0%BC%E5%BC%8F"><span class="nav-number">1.</span> <span class="nav-text">Chap.4 格式</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#AVI"><span class="nav-number">1.1.</span> <span class="nav-text">AVI</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#RMVB"><span class="nav-number">1.2.</span> <span class="nav-text">RMVB</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#WMV"><span class="nav-number">1.3.</span> <span class="nav-text">WMV</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#MP4"><span class="nav-number">1.4.</span> <span class="nav-text">MP4</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#MKV"><span class="nav-number">1.5.</span> <span class="nav-text">MKV</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#MOV"><span class="nav-number">1.6.</span> <span class="nav-text">MOV</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#FLV"><span class="nav-number">1.7.</span> <span class="nav-text">FLV</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Chap-5-%E5%AD%97%E5%B9%95"><span class="nav-number">2.</span> <span class="nav-text">Chap.5 字幕</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Closed-Caption"><span class="nav-number">2.1.</span> <span class="nav-text">Closed Caption</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#subtitle"><span class="nav-number">2.2.</span> <span class="nav-text">subtitle</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Chap-6-%E6%9D%82%E9%A1%B9"><span class="nav-number">3.</span> <span class="nav-text">Chap.6 杂项</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#OVA"><span class="nav-number">3.1.</span> <span class="nav-text">OVA</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#OVD"><span class="nav-number">3.2.</span> <span class="nav-text">OVD</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AE%97%E6%B3%95"><span class="nav-number">3.3.</span> <span class="nav-text">算法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#CRC32"><span class="nav-number">3.3.1.</span> <span class="nav-text">CRC32</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#MD5"><span class="nav-number">3.3.2.</span> <span class="nav-text">MD5</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#BT"><span class="nav-number">3.4.</span> <span class="nav-text">BT</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%BD%97%E9%A9%AC%E9%9F%B3"><span class="nav-number">3.5.</span> <span class="nav-text">罗马音</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Matlab%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%80%EF%BC%89%EF%BC%882023-08-31%EF%BC%89"><span class="nav-number">1.</span> <span class="nav-text">Matlab学习笔记（一）（2023-08-31）</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Vocabulary"><span class="nav-number">1.1.</span> <span class="nav-text">Vocabulary</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Numeric-Variable-Data-Type"><span class="nav-number">1.2.</span> <span class="nav-text">Numeric Variable (Data) Type</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Special-Variables-and-Constants"><span class="nav-number">1.3.</span> <span class="nav-text">Special Variables and Constants</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#MATLAB-Calling-Priority"><span class="nav-number">1.4.</span> <span class="nav-text">MATLAB Calling Priority</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Array-Indexing"><span class="nav-number">1.5.</span> <span class="nav-text">Array Indexing</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#A-1-3-1-3"><span class="nav-number">1.5.1.</span> <span class="nav-text">A([1 3],[1 3])</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#A-1-3-1-3-1"><span class="nav-number">1.5.2.</span> <span class="nav-text">A([1 3;1 3])</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Some-Special-Matrix"><span class="nav-number">1.6.</span> <span class="nav-text">Some Special Matrix</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Some-Matrix-Related-Functions"><span class="nav-number">1.7.</span> <span class="nav-text">Some Matrix Related Functions</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Exercise"><span class="nav-number">1.8.</span> <span class="nav-text">Exercise</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
