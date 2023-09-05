@@ -20,22 +20,23 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="Matlab学习笔记（一）（2023-08-31）教學內容: 環境介面簡介、把MATLAB當計算機使用，與矩陣輸入、操作 演講者: 郭彥甫 (Yan-Fu Kuo), 台大生機系 Vocabularyvariable 变数 trigonometry 熟练使用matlab online help Numeric Variable (Data) Type  Variable的default type是">
+  <meta name="description" content="Matlab学习笔记（一）（2023-08-31）教學內容: 環境介面簡介、把MATLAB當計算機使用，與矩陣輸入、操作 演講者: 郭彥甫 (Yan-Fu Kuo), 台大生機系 Today Introduction MATLAB as calculator Array operation  Vocabularyvariable 变数 熟练使用matlab online help Numeric">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Matlab学习笔记">
 <meta property="og:url" content="http://example.com/2023/08/31/Matlab%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E4%B8%80/index.html">
 <meta property="og:site_name" content="Qiusensei">
-<meta property="og:description" content="Matlab学习笔记（一）（2023-08-31）教學內容: 環境介面簡介、把MATLAB當計算機使用，與矩陣輸入、操作 演講者: 郭彥甫 (Yan-Fu Kuo), 台大生機系 Vocabularyvariable 变数 trigonometry 熟练使用matlab online help Numeric Variable (Data) Type  Variable的default type是">
+<meta property="og:description" content="Matlab学习笔记（一）（2023-08-31）教學內容: 環境介面簡介、把MATLAB當計算機使用，與矩陣輸入、操作 演講者: 郭彥甫 (Yan-Fu Kuo), 台大生機系 Today Introduction MATLAB as calculator Array operation  Vocabularyvariable 变数 熟练使用matlab online help Numeric">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/qiusensei/blogimage@main/image-20230831114256703.png">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/qiusensei/blogimage@main/image-20230831111459284.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/qiusensei/blogimage@main/image-20230905163111971.png">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/qiusensei/blogimage@main/image-20230831112704860.png">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/qiusensei/blogimage@main/image-20230831112106178.png">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/qiusensei/blogimage@main/image-20230831114433264.png">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/qiusensei/blogimage@main/image-20230831111808630.png">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/qiusensei/blogimage@main/image-20230831111922307.png">
 <meta property="article:published_time" content="2023-08-31T03:51:14.000Z">
-<meta property="article:modified_time" content="2023-08-31T03:53:31.600Z">
+<meta property="article:modified_time" content="2023-09-05T08:42:24.060Z">
 <meta property="article:author" content="qiusensei">
 <meta property="article:tag" content="学习">
 <meta property="article:tag" content="数学">
@@ -199,10 +200,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2023-08-31 11:51:14 / 修改时间：11:53:31" itemprop="dateCreated datePublished" datetime="2023-08-31T11:51:14+08:00">2023-08-31</time>
+              <time title="创建时间：2023-08-31 11:51:14" itemprop="dateCreated datePublished" datetime="2023-08-31T11:51:14+08:00">2023-08-31</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2023-09-05 16:42:24" itemprop="dateModified" datetime="2023-09-05T16:42:24+08:00">2023-09-05</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
@@ -226,7 +233,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>610</span>
+              <span>869</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
@@ -247,8 +254,12 @@
       
         <h1 id="Matlab学习笔记（一）（2023-08-31）"><a href="#Matlab学习笔记（一）（2023-08-31）" class="headerlink" title="Matlab学习笔记（一）（2023-08-31）"></a>Matlab学习笔记（一）（2023-08-31）</h1><p>教學內容: 環境介面簡介、把MATLAB當計算機使用，與矩陣輸入、操作</p>
 <p>演講者: 郭彥甫 (Yan-Fu Kuo), 台大生機系</p>
+<h2 id="Today"><a href="#Today" class="headerlink" title="Today"></a>Today</h2><ul>
+<li>Introduction</li>
+<li>MATLAB as calculator</li>
+<li>Array operation</li>
+</ul>
 <h2 id="Vocabulary"><a href="#Vocabulary" class="headerlink" title="Vocabulary"></a>Vocabulary</h2><p>variable 变数</p>
-<p>trigonometry</p>
 <p>熟练使用matlab online help</p>
 <p>Numeric Variable (Data) Type </p>
 <p>Variable的default type是double,default默认的</p>
@@ -259,6 +270,7 @@
 <h2 id="Special-Variables-and-Constants"><a href="#Special-Variables-and-Constants" class="headerlink" title="Special Variables and Constants"></a>Special Variables and Constants</h2><p> iskeyword</p>
 <p>variables can’t use keyword</p>
 <h2 id="MATLAB-Calling-Priority"><a href="#MATLAB-Calling-Priority" class="headerlink" title="MATLAB Calling Priority"></a>MATLAB Calling Priority</h2><p><img src="https://cdn.jsdelivr.net/gh/qiusensei/blogimage@main/image-20230831111459284.png" alt="image-20230831111459284"></p>
+<h2 id="Format"><a href="#Format" class="headerlink" title="Format"></a>Format</h2><p><img src="https://cdn.jsdelivr.net/gh/qiusensei/blogimage@main/image-20230905163111971.png" alt="image-20230905163111971"></p>
 <h2 id="Array-Indexing"><a href="#Array-Indexing" class="headerlink" title="Array Indexing"></a>Array Indexing</h2><p>pay attention to the difference between “A([1 3;1 3])” and “A([1 3],[1 3])”</p>
 <h3 id="A-1-3-1-3"><a href="#A-1-3-1-3" class="headerlink" title="A([1 3],[1 3])"></a>A([1 3],[1 3])</h3><p>可以按照逗号”,”分隔行与列来记忆,逗号前表示1行与3行,逗号后表示1列与3列</p>
 <h3 id="A-1-3-1-3-1"><a href="#A-1-3-1-3-1" class="headerlink" title="A([1 3;1 3])"></a>A([1 3;1 3])</h3><p>A([1 3])会输出矩阵的1号和三号元素,增加了分号”;”后,就会连续输出两次</p>
@@ -268,6 +280,14 @@
 <h2 id="Exercise"><a href="#Exercise" class="headerlink" title="Exercise"></a>Exercise</h2><p><img src="https://cdn.jsdelivr.net/gh/qiusensei/blogimage@main/image-20230831114433264.png" alt="image-20230831114433264"></p>
 <p><img src="https://cdn.jsdelivr.net/gh/qiusensei/blogimage@main/image-20230831111808630.png" alt="image-20230831111808630"></p>
 <p><img src="https://cdn.jsdelivr.net/gh/qiusensei/blogimage@main/image-20230831111922307.png" alt="image-20230831111922307"></p>
+<h2 id="The-Answer-of-The-Last-Question"><a href="#The-Answer-of-The-Last-Question" class="headerlink" title="The Answer of The Last Question"></a>The Answer of The Last Question</h2><figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt; A=[<span class="number">1</span> <span class="number">21</span> <span class="number">6</span>;<span class="number">5</span> <span class="number">17</span> <span class="number">9</span>; <span class="number">31</span> <span class="number">2</span> <span class="number">7</span>]</span><br><span class="line"></span><br><span class="line">A =</span><br><span class="line"></span><br><span class="line">       <span class="number">1</span>             <span class="number">21</span>              <span class="number">6</span>       </span><br><span class="line">       <span class="number">5</span>             <span class="number">17</span>              <span class="number">9</span>       </span><br><span class="line">      <span class="number">31</span>              <span class="number">2</span>              <span class="number">7</span>       </span><br><span class="line"></span><br><span class="line">&gt;&gt; A(<span class="number">1</span>,<span class="number">2</span>)=<span class="number">76</span></span><br><span class="line"></span><br><span class="line">A =</span><br><span class="line"></span><br><span class="line">       <span class="number">1</span>             <span class="number">76</span>              <span class="number">6</span>       </span><br><span class="line">       <span class="number">5</span>             <span class="number">17</span>              <span class="number">9</span>       </span><br><span class="line">      <span class="number">31</span>              <span class="number">2</span>              <span class="number">7</span>       </span><br><span class="line"></span><br><span class="line">&gt;&gt; A(<span class="number">3</span>,<span class="number">2</span>)=<span class="number">0</span></span><br><span class="line"></span><br><span class="line">A =</span><br><span class="line"></span><br><span class="line">       <span class="number">1</span>             <span class="number">76</span>              <span class="number">6</span>       </span><br><span class="line">       <span class="number">5</span>             <span class="number">17</span>              <span class="number">9</span>       </span><br><span class="line">      <span class="number">31</span>              <span class="number">0</span>              <span class="number">7</span>       </span><br><span class="line"></span><br><span class="line">&gt;&gt; A([<span class="number">1</span>,<span class="number">2</span>],[<span class="number">2</span>,<span class="number">3</span>])=<span class="number">0</span></span><br><span class="line"></span><br><span class="line">A =</span><br><span class="line"></span><br><span class="line">       <span class="number">1</span>              <span class="number">0</span>              <span class="number">0</span>       </span><br><span class="line">       <span class="number">5</span>              <span class="number">0</span>              <span class="number">0</span>       </span><br><span class="line">      <span class="number">31</span>              <span class="number">0</span>              <span class="number">7</span>       </span><br></pre></td></tr></table></figure>
+
+
+
+
+
+
+
 
     </div>
 
@@ -368,7 +388,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Matlab%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%80%EF%BC%89%EF%BC%882023-08-31%EF%BC%89"><span class="nav-number">1.</span> <span class="nav-text">Matlab学习笔记（一）（2023-08-31）</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Vocabulary"><span class="nav-number">1.1.</span> <span class="nav-text">Vocabulary</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Numeric-Variable-Data-Type"><span class="nav-number">1.2.</span> <span class="nav-text">Numeric Variable (Data) Type</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Special-Variables-and-Constants"><span class="nav-number">1.3.</span> <span class="nav-text">Special Variables and Constants</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#MATLAB-Calling-Priority"><span class="nav-number">1.4.</span> <span class="nav-text">MATLAB Calling Priority</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Array-Indexing"><span class="nav-number">1.5.</span> <span class="nav-text">Array Indexing</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#A-1-3-1-3"><span class="nav-number">1.5.1.</span> <span class="nav-text">A([1 3],[1 3])</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#A-1-3-1-3-1"><span class="nav-number">1.5.2.</span> <span class="nav-text">A([1 3;1 3])</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Some-Special-Matrix"><span class="nav-number">1.6.</span> <span class="nav-text">Some Special Matrix</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Some-Matrix-Related-Functions"><span class="nav-number">1.7.</span> <span class="nav-text">Some Matrix Related Functions</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Exercise"><span class="nav-number">1.8.</span> <span class="nav-text">Exercise</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Matlab%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%80%EF%BC%89%EF%BC%882023-08-31%EF%BC%89"><span class="nav-number">1.</span> <span class="nav-text">Matlab学习笔记（一）（2023-08-31）</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Today"><span class="nav-number">1.1.</span> <span class="nav-text">Today</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Vocabulary"><span class="nav-number">1.2.</span> <span class="nav-text">Vocabulary</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Numeric-Variable-Data-Type"><span class="nav-number">1.3.</span> <span class="nav-text">Numeric Variable (Data) Type</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Special-Variables-and-Constants"><span class="nav-number">1.4.</span> <span class="nav-text">Special Variables and Constants</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#MATLAB-Calling-Priority"><span class="nav-number">1.5.</span> <span class="nav-text">MATLAB Calling Priority</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Format"><span class="nav-number">1.6.</span> <span class="nav-text">Format</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Array-Indexing"><span class="nav-number">1.7.</span> <span class="nav-text">Array Indexing</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#A-1-3-1-3"><span class="nav-number">1.7.1.</span> <span class="nav-text">A([1 3],[1 3])</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#A-1-3-1-3-1"><span class="nav-number">1.7.2.</span> <span class="nav-text">A([1 3;1 3])</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Some-Special-Matrix"><span class="nav-number">1.8.</span> <span class="nav-text">Some Special Matrix</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Some-Matrix-Related-Functions"><span class="nav-number">1.9.</span> <span class="nav-text">Some Matrix Related Functions</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Exercise"><span class="nav-number">1.10.</span> <span class="nav-text">Exercise</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#The-Answer-of-The-Last-Question"><span class="nav-number">1.11.</span> <span class="nav-text">The Answer of The Last Question</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -431,7 +451,7 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-area"></i>
     </span>
-    <span title="站点总字数">19k</span>
+    <span title="站点总字数">20k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
