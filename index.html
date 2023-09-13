@@ -193,7 +193,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2023-09-05 21:45:57" itemprop="dateModified" datetime="2023-09-05T21:45:57+08:00">2023-09-05</time>
+                <time title="修改时间：2023-09-13 15:13:59" itemprop="dateModified" datetime="2023-09-13T15:13:59+08:00">2023-09-13</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -211,14 +211,14 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>996</span>
+              <span>2.4k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
                 <i class="far fa-clock"></i>
               </span>
                 <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>1 分钟</span>
+              <span>2 分钟</span>
             </span>
 
         </div>
@@ -267,7 +267,47 @@
 </ul>
 <h2 id="Flow-Control"><a href="#Flow-Control" class="headerlink" title="Flow Control"></a>Flow Control</h2><p><img src="https://cdn.jsdelivr.net/gh/qiusensei/blogimage@main/image-20230905170436170.png" alt="image-20230905170436170"></p>
 <h2 id="Exercise-1"><a href="#Exercise-1" class="headerlink" title="Exercise"></a>Exercise</h2><p><img src="https://cdn.jsdelivr.net/gh/qiusensei/blogimage@main/image-20230905212019001.png" alt="image-20230905212019001"></p>
+<h2 id="Answer"><a href="#Answer" class="headerlink" title="Answer"></a>Answer</h2><p>问题：书写一个函数问取华氏温度,输入华氏温度后计算其相应的摄氏温度,计算完成后,显示改摄氏温度,要求该函数能持续运行,直到输入非数字时.</p>
+<p>关键词:</p>
+<p>input:用于从命令窗口获取用户输入。</p>
+<figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">variable = input(prompt)</span><br><span class="line"><span class="comment">%例如:</span></span><br><span class="line">name = input(<span class="string">&#x27;Please enter your name: &#x27;</span>,<span class="string">&#x27;s&#x27;</span>);</span><br><span class="line">age = input(<span class="string">&#x27;Please enter your age: &#x27;</span>);</span><br><span class="line">num = input(<span class="string">&#x27;Please enter a number: &#x27;</span>,<span class="string">&#x27;d&#x27;</span>);</span><br></pre></td></tr></table></figure>
+
+<p>isempty:用于检测一个数组或字符串是否为空。</p>
+<figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">isempty</span>(A)</span><br><span class="line"><span class="comment">%例如:</span></span><br><span class="line">A = [];</span><br><span class="line"><span class="built_in">isempty</span>(A) <span class="comment">% 返回 1</span></span><br><span class="line"></span><br><span class="line">A = [<span class="number">1</span> <span class="number">2</span> <span class="number">3</span>]; </span><br><span class="line"><span class="built_in">isempty</span>(A) <span class="comment">% 返回 0</span></span><br></pre></td></tr></table></figure>
+
+<p>num2str:可以将数字转换为字符串。</p>
+<figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">str = num2str(x)</span><br><span class="line"><span class="comment">%例如:</span></span><br><span class="line"><span class="comment">%1.将数字转换为字符串</span></span><br><span class="line">x = <span class="number">5</span>;</span><br><span class="line">str = num2str(x) <span class="comment">% str = &#x27;5&#x27;</span></span><br><span class="line"></span><br><span class="line">y = <span class="number">3.14</span>;</span><br><span class="line">str = num2str(y) <span class="comment">% str = &#x27;3.14&#x27;</span></span><br><span class="line"><span class="comment">%2.控制转换后的字符串格式,例如保留两位小数:</span></span><br><span class="line">y = <span class="number">3.14159</span>;</span><br><span class="line">str = num2str(y, <span class="string">&#x27;%0.2f&#x27;</span>) <span class="comment">% str = &#x27;3.14&#x27;</span></span><br><span class="line"><span class="comment">%3.转换为科学计数法</span></span><br><span class="line">x = <span class="number">5e3</span>;</span><br><span class="line">str = num2str(x, <span class="string">&#x27;%e&#x27;</span>) <span class="comment">% str = &#x27;5.000000e+003&#x27;</span></span><br><span class="line"><span class="comment">%4.转换为十六进制格式</span></span><br><span class="line">n = <span class="number">255</span>;</span><br><span class="line">str = num2str(n, <span class="string">&#x27;%hex&#x27;</span>) <span class="comment">% str = &#x27;ff&#x27;</span></span><br></pre></td></tr></table></figure>
+
+<p>注:在MATLAB中,5.000000e+003和5e3都表示数字5000。但是它们有以下几点细微区别:</p>
+<ol>
+<li><p>显示格式不同:</p>
+<p>5.000000e+003显示为完整的科学计数法格式,包含系数、指数符号e和指数。</p>
+<p>5e3仅显示最简式,省略了系数的值1。</p>
+</li>
+<li><p>精度不同</p>
+<p>5.000000e+003中的系数有6位有效数字,精度较高。</p>
+<p>5e3没有显示系数,精度无法确定。</p>
+</li>
+<li><p>存储方式不同</p>
+<p>5.000000e+003在MATLAB内部可能会以完整科学计数法形式存储该值。</p>
+<p>5e3可能会存储为近似的二进制指数形式,更加简洁。</p>
+</li>
+</ol>
 <h2 id="Function-Default-Variables"><a href="#Function-Default-Variables" class="headerlink" title="Function Default Variables"></a>Function Default Variables</h2><p><img src="https://cdn.jsdelivr.net/gh/qiusensei/blogimage@main/image-20230905212430479.png" alt="image-20230905212430479"></p>
+<h1 id="Matlab学习笔记（二）（2023-09-5）-1"><a href="#Matlab学习笔记（二）（2023-09-5）-1" class="headerlink" title="Matlab学习笔记（二）（2023-09-5）"></a>Matlab学习笔记（二）（2023-09-5）</h1><h2 id="Today-2"><a href="#Today-2" class="headerlink" title="Today:"></a>Today:</h2><ul>
+<li>Variables: string, structure, cell</li>
+<li>Data access</li>
+</ul>
+<h2 id="ASCII-TABLE"><a href="#ASCII-TABLE" class="headerlink" title="ASCII TABLE"></a>ASCII TABLE</h2><p><img src="https://cdn.jsdelivr.net/gh/qiusensei/blogimage@main/image-20230913150800307.png" alt="image-20230913150800307"></p>
+<h2 id="Reading-from-Files"><a href="#Reading-from-Files" class="headerlink" title="Reading from Files"></a>Reading from Files</h2><figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">fid = fopen(<span class="string">&#x27;04asciiData.txt&#x27;</span>,<span class="string">&#x27;r&#x27;</span>); <span class="built_in">i</span> = <span class="number">1</span>;</span><br><span class="line"><span class="keyword">while</span> ~feof(fid)</span><br><span class="line">name(<span class="built_in">i</span>,:) = fscanf(fid,<span class="string">&#x27;%5c&#x27;</span>,<span class="number">1</span>);</span><br><span class="line">year(<span class="built_in">i</span>) = fscanf(fid,<span class="string">&#x27;%d&#x27;</span>,<span class="number">1</span>);</span><br><span class="line">no1(<span class="built_in">i</span>) = fscanf(fid,<span class="string">&#x27;%d&#x27;</span>,<span class="number">1</span>);</span><br><span class="line">no2(<span class="built_in">i</span>) = fscanf(fid,<span class="string">&#x27;%d&#x27;</span>,<span class="number">1</span>);</span><br><span class="line">no3(<span class="built_in">i</span>) = fscanf(fid,<span class="string">&#x27;%g&#x27;</span>,<span class="number">1</span>);</span><br><span class="line">no4(<span class="built_in">i</span>) = fscanf(fid,<span class="string">&#x27;%g\n&#x27;</span>);</span><br><span class="line"><span class="built_in">i</span>=<span class="built_in">i</span>+<span class="number">1</span>;</span><br><span class="line"><span class="keyword">end</span></span><br><span class="line">fclose(fid);</span><br></pre></td></tr></table></figure>
+
+<p>其中第三行是什么意思?</p>
+<h2 id="Exercise-2"><a href="#Exercise-2" class="headerlink" title="Exercise"></a>Exercise</h2><p><img src="https://cdn.jsdelivr.net/gh/qiusensei/blogimage@main/image-20230913150851524.png" alt="image-20230913150851524"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/qiusensei/blogimage@main/image-20230913150905360.png" alt="image-20230913150905360"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/qiusensei/blogimage@main/image-20230913151000207.png" alt="image-20230913151000207"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/qiusensei/blogimage@main/image-20230913151054983.png" alt="image-20230913151054983"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/qiusensei/blogimage@main/image-20230913151341259.png" alt="image-20230913151341259"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/qiusensei/blogimage@main/image-20230913151114353.png" alt="image-20230913151114353"></p>
 
       
     </div>
@@ -1473,19 +1513,19 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-area"></i>
     </span>
-    <span title="站点总字数">20k</span>
+    <span title="站点总字数">21k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="站点阅读时长">18 分钟</span>
+    <span title="站点阅读时长">19 分钟</span>
 </div>
   <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
   </div>
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共14k字</span>
+  <span class="post-count">博客全站共14.5k字</span>
 </div>
 
 
